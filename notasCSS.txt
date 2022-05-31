@@ -1,0 +1,128 @@
+tipos de selectores en css:
+*{
+    El asterisco selecciona todo 
+}
+tipo(nombre de la etiqueta){
+    Este solo aplica a la etiqueta que se este seleccionando
+}
+.clases(nombre de la clase){
+    Este solo es nombrar el nombre de la clase o class=""
+    Siempre hay que poner un punto antes de nombrar la clase
+    Varios elementos pueden tener el nombre de la misma clase
+}
+#ID(id de la etiqueta o nombre){
+    Este se selecciona por medio del nombre del ID
+    Pero a diferencia de la clase el ID deberia ser unico
+}
+[por Nombreatributo="valorAtributo"]{
+    Cuando es por atributo solo es seleccionar el nombre que se le dio
+    y el valor
+}
+decendiente
+etiquetaPadre + la etiquetaHija{
+    Este selector se usa cuando hay una etiqueta contenedora sobre otra 
+    y se quiere dar un estilo o atributo
+}
+pseudo clase
+etiqueta:hover{
+    Este selector sirve para cuando se pase el cursor por la etiqueta
+    se subraye del estilo que se le designo
+}
+
+Nivel de especifidad
+ejemplo
+h1 {
+    color u otro atributo + !important 
+    Este es el nivel de especifidad por jerarquia mas alto despues del important
+    no hay nada mas
+}
+
+
+METODOLOGIA BEM
+
+Esta metodologia se basa en el nombre que se le de a una clase
+
+Esta metodologia para ser util se usa una clase y se usa de la siguiente forma: nombreClase__nombreAtributo
+
+
+    TIPOGRAFIA 
+
+con el atributo font-size: se puede cambiar el tamaño de la letra en algunas medidas como
+px(mas usada) entre otras: vh.vw, %, rem etc
+
+        tipos de texto:
+        font-size
+        font-family (tipo de letra hay muchas)
+        line-height 
+        font-weight (grosor de la letra)
+        etc...
+
+        Hay tipografias externas las cuales se puden encontrar en google font
+        solo es copiar el link en el head e decir su especifidad en el archivo css.
+
+
+    PROPIEDADES DE CAJA
+
+        Estas solo afentan al entorno de las cajas
+        background-color: Es el color de fondo de la cajas
+        display: inline-block = para que el contenido se comporte como una caja siendo un elemento en liena
+        padding: Es la distancia entre el contenido y la caja que lo contiene los mas importantes son:
+            left, top, right y bottom
+            PERO CON EL PADDING NORMAL SE APLICA A TODO
+        text-aling: Es para alinear el texto en nuestra caja como queramos o se usa el CENTER para alinearlo a nivel de la caja
+        width: alto
+        height: ancho
+        margin: distancia entre las cajas y tiene las mismas propiedades del padding: left, top, right, bottom
+        border-radious: es para redondear la caja
+            PERO HAY VARIOS TIPOS DE BORDER Y PARA AGREGAR UN COLOR SE AGREGA LA PALABRA SOLID
+
+        box-shadow: Este es para darle una sombra a la caja = 1px 2px(Estos son los ejes) 15px(el borde de la sombra)
+        text-shadow: Este es para darle sombra al texto: 1px 1px(los ejes)15px(el borde de la sombra) color
+        transform: rotate(50deg) este es para rotar la caja
+    
+    POSITIONS
+
+        position: relative
+        position: absolute es para reservar un espacio vacio 
+        opacity: 0 hasta el 1 o algun otro numero es la transparencia
+        IMPORTANTE: Con la propiedad auto se ajusta el bloque o la linea de forma dentrada asi Pero solo funciona ajustando el ancho 
+        lo alto se tiene que declarar.
+        fixed: es para fijar un bloque o linea este importante para un nav o un menu
+        y para que este no ocupe espacio se puede usar un margin: -100px u otro valor que se calcule
+        stiky: este conserva su espacio pero este sigue fijado y este junto con un top funcio para reservar un espacio pero se pueda hacer scroll y nuestro espacio este fijado
+
+    DISPLAY
+
+        Este modifica el comportamiento de las cajas, por ejemplor el block y el inline o el inline-block
+        inline-block: este da un ancho y un alto a su ves (En los inline no se pueden modificar las resoluciones)
+
+    OVERFLOW
+
+        overflow: permite hacer scroll dentro de la caja contenedora
+    float: ayuda a ajustar un texto y una imagen dando un buen aspecto
+
+    SPEUDO-elementos
+
+        Para agregar un speudo elemento se llama la clase + :: y el elemento que deseamos
+        el pseudo elemento first-line y letter solo funcionan en bloques
+        first-line: altera o modifica la primera liena de texto
+        first-letter: modifica la primera letra del parrafo
+        placeholder: este tambien tiene propiedades como estilo de letra, color
+        selection: este sirve para resaltar un texto o algo y darle un estilo (Este se comporta como un elemento en linea)
+        before: es un elemento en linea y siempre tiene que llevar la propiedad content este es para escribir algo antes y es un texto estatico
+        after: es un elemento en linea y siempre tiene que llevar la propiedad content, este es para escribir algo despues y es un texto estatico
+
+    SPEUDO-clases
+
+    Son eventos que se puede realizar en las clases o algunas acciones que se le pueden otorgar estilos
+
+    hover: se le pueden dar estilos de color y tambien de tamaño
+    NOTA: la propiedad transition sirve para definir el tiempo de una cambio de estilo por ejemplo usando la speudo clase hover 
+    es bastante util. y con el atrbuto all se selecciona todo las propiedades de la speudo clase y se aplica la mis transition.
+
+
+
+
+
+
+
