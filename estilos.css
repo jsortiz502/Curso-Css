@@ -1,12 +1,4 @@
-.caja{
-    height: 200px;
-    width: 200px;
-    background: yellow;
-    transition: background 1s, width 1s, color 2s ;
-}
-.caja:hover{
-    color: red;
-    background: green;
-    width: 500px;
-    height: 600px;
+div{
+    width: 45%;
+    display: inline-block;
 }

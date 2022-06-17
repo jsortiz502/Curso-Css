@@ -114,13 +114,34 @@ px(mas usada) entre otras: vh.vw, %, rem etc
 
     SPEUDO-clases
 
-    Son eventos que se puede realizar en las clases o algunas acciones que se le pueden otorgar estilos
+        Son eventos que se puede realizar en las clases o algunas acciones que se le pueden otorgar estilos
 
-    hover: se le pueden dar estilos de color y tambien de tamaño
-    NOTA: la propiedad transition sirve para definir el tiempo de una cambio de estilo por ejemplo usando la speudo clase hover 
-    es bastante util. y con el atrbuto all se selecciona todo las propiedades de la speudo clase y se aplica la mis transition.
+        hover: se le pueden dar estilos de color y tambien de tamaño
+        NOTA: la propiedad transition sirve para definir el tiempo de una cambio de estilo por ejemplo usando la speudo clase hover 
+        es bastante util. y con el atrbuto all se selecciona todo las propiedades de la speudo clase y se aplica la mis transition.
+        link: mmmm casi no important
+        visited: igual que el otro
+        active: funciona mediante un click muy parecido al hoover solo que aqui se tiene que dejar sostenido el click para no perder el efecto
+        tambien se le puede dar una transition
+        focus: mas aplicado en inputs se puede cambiar el tamaño y color y tambien la propiedad de transition
 
+    OBJECT-FIT
+        object-fit: contain (Deja 200px arriba y abajo)
+        object-fit: cover (Ajusta toda la imagen o objeto dentro el contenedor)
+        object-fit: none (Ps vale none osea huevo)
 
+    OBJECT-POSITION
+        object-position: left o right o top o bottom (Da un enfoque del lado que designemos)
+
+    CURSOR
+        cursor: (Hay demasiados tipos de cursores)
+
+    COLORES
+        listas de colores de CSS: https://www.mclibre.org/consultar/htmlcss/css/css-color.html#:~:text=En%20la%20recomendaci%C3%B3n%20HTML%203.2,%2C%20teal%2C%20white%20y%20yellow.
+        Es importante usar el sistema hexagecimal de los colores para que el navegador no tome decisiones propias
+        osea color: #fff
+        color: rgb(0,0,0)r de red, g de green, b de blue
+        NOTA: 255 es el tope maximo de un color y con la propiedad opacity se da opacidad 
 
 
 
